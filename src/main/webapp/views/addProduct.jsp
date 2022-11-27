@@ -154,7 +154,8 @@ font-size: 18px !important;
 		<form action="addItems" method="post">
 			<div style="display: flex; justify-content: space-around;">
 				<div>
-					Product Id: <input type="number" name="id" class="form-control ${l1.size() > 0 ? 'is-invalid':'' }" />
+					Product Id: 
+					<input type="number"name="id" class="form-control ${l1.size() > 0 ? 'is-invalid':'' }" required="required"/>
 					<c:forEach var="e" items="${l1 }">
 						<div style="color: red;" id="validationServer03Feedback" class="invalid-feedback">
 							${e }</div>
@@ -162,7 +163,8 @@ font-size: 18px !important;
 				</div>
 			<div>
 				Items Name: <input type="text" name="name"
-				class="form-control ${l2.size() > 0 ? 'is-invalid':'' }" />
+				class="form-control ${l2.size() > 0 ? 'is-invalid':'' }" required="required" 
+				 />
 				<c:forEach var="e" items="${l2 }">
 							<div style="color: red;" id="validationServer03Feedback" class="invalid-feedback">
 								${e }</div>
@@ -170,7 +172,8 @@ font-size: 18px !important;
 			</div>
 			<div>
 				Quantity: <input type="number" name="qty"
-							class="form-control ${l3.size() > 0 ? 'is-invalid':'' }" />
+							class="form-control ${l3.size() > 0 ? 'is-invalid':'' }"  required="required"
+							 min="0" />
 				<c:forEach var="e" items="${l3 }">
 					<div style="color: red;" id="validationServer03Feedback" class="invalid-feedback">
 					${e }</div>
@@ -178,7 +181,7 @@ font-size: 18px !important;
 			</div>
 			<div>
 						Price: <input type="number" name="price"
-							class="form-control ${l4.size() > 0 ? 'is-invalid':'' }" />
+							class="form-control ${l4.size() > 0 ? 'is-invalid':'' }" required="required" step="any" min="0" />
 						<c:forEach var="e" items="${l4 }">
 							<div style="color: red;" id="validationServer03Feedback" class="invalid-feedback">
 								${e }</div>
@@ -186,7 +189,7 @@ font-size: 18px !important;
 			</div>
 			<div>
 						<input type="text" name="shop_name" value="${shop_name }"
-							placeholder="${shop_name }" hidden="true" />
+							placeholder="${shop_name }" hidden="true" required="required" />
 			</div>
 			<div>
 						<input type="submit" value="SAVE" class="btn-blue">

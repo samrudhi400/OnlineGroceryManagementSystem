@@ -191,7 +191,7 @@ and also iPads specifically.
 		</div>
 		<div align="center">
 
-			<a href="back?name=${name } "><button class="btn-back">Back
+			<a href="back?name=${name} "><button class="btn-back">Back
 					To Home Page</button></a>
 
 		</div>

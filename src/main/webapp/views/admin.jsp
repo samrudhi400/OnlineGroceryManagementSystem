@@ -193,10 +193,10 @@ and also iPads specifically.
 							<th>View Product</th>
 						</tr>
 					</thead>
-					<tbody>
+					<tbody style="height: 10px;">
 						<c:forEach var="list" items="${l }" varStatus="counter">
 
-							<tr>
+							<tr >
 								<td>${counter.count}</td>
 								<td>${list.user_name }</td>
 								<td>${list.password }</td>
@@ -215,8 +215,8 @@ and also iPads specifically.
 				</table>
 
 			</div>
-			<a style="color: blue; margin-top: 40px" href="allProduct">View
-				All Product Details </a> <br> <u style="color: green;">
+			
+				<u style="color: green;">
 				<h3 align="center" style="color: green; margin-top: 40px;">${shop_name }
 					Product Details</h3>
 			</u>
@@ -248,21 +248,13 @@ and also iPads specifically.
 					</tbody>
 				</table>
 			</div>
-<<<<<<< HEAD
-
-=======
 		
 			
->>>>>>> 52dce04bc68cc567731e792fee31c1d35d71101b
 
 		</div>
 
 
-<<<<<<< HEAD
-		<a style="color: blue;" href="login">Back</a>
-=======
-		<h3 style="background-color: white; width: 9%; margin-left: 2%;"> <a style="color: blue;" href="login">  Back</a> </h3>  
->>>>>>> 52dce04bc68cc567731e792fee31c1d35d71101b
+		<h3 style="background-color: white; width: 9%; margin-left: 2%;"> <a style="color: blue;" href="login">  Logout</a> </h3>  
 
 	</div>
 	<script

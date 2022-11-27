@@ -71,7 +71,7 @@ font-size: 18px !important;
 				<label for="exampleInputEmail1">Set Gst</label> <input type="number"
 					class="form-control ${l2.size() > 0 ? 'is-invalid':'' }"
 					id="exampleInputEmail1" name="gst" min="0" max="100" step="0.1"
-					aria-describedby="emailHelp" placeholder="${gd.gst }%" />
+					aria-describedby="emailHelp" placeholder="${gd.gst }%" required="required"/>
 				<c:forEach var="e" items="${l2 }">
 					<div id="validationServer03Feedback" class="invalid-feedback">
 						${e }</div>
@@ -83,7 +83,7 @@ font-size: 18px !important;
 					type="number"
 					class="form-control ${l3.size() > 0 ? 'is-invalid':'' }"
 					id="exampleInputPassword1" name="discount" min="0" max="100"
-					step="0.1" placeholder="${gd.discount }%" />
+					step="0.1" placeholder="${gd.discount }%" required="required"/>
 					
 				<c:forEach var="e" items="${l3 }">
 					<div id="validationServer03Feedback" class="invalid-feedback">

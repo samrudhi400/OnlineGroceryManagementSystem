@@ -78,7 +78,8 @@ table {
 tr:nth-of-type(odd) { 
 	background: #eee; 
 	}
-
+tr:nth-of-type(even){
+background: #fff;}
 th { 
 	background: black; 
 	color: white; 
@@ -162,12 +163,7 @@ font-size: 18px !important;
 
 <body>
 
-<<<<<<< HEAD
-	<div 			style="display: flex; justify-content: space-around; margin-bottom: 30px"
-	>
-=======
 	<div 			style="display: flex; justify-content: space-around; margin-bottom: 30px">
->>>>>>> 52dce04bc68cc567731e792fee31c1d35d71101b
 				<h1>Welcome ${uname }</h1>
 		
 				<h1>${shop_name } Shop</h1>

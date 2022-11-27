@@ -1,14 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-	
 <%@page isELIgnored="false"%>
-
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<<<<<<< HEAD
-<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %> 
-=======
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
->>>>>>> 52dce04bc68cc567731e792fee31c1d35d71101b
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,19 +23,6 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 <style type="text/css">
-<<<<<<< HEAD
-
-::placeholder { 
-   color:    #bfbfbf	 !important;
-}
-
-
-body {
-	padding-top: 90px;
-	background-image:url("grocerybg.jpg");
-	background-repeat:no-repeat;
-	 background-size: cover;
-=======
 ::placeholder {
 	color: #bfbfbf !important;
 }
@@ -51,7 +32,6 @@ body {
 	background-image: url("grocerybg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
->>>>>>> 52dce04bc68cc567731e792fee31c1d35d71101b
 }
 
 .panel-login {
@@ -59,21 +39,12 @@ body {
 	-webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
 	box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
-<<<<<<< HEAD
-	background-color: rgba(255,255,255,0.23);
-=======
 	background-color: rgba(255, 255, 255, 0.23);
->>>>>>> 52dce04bc68cc567731e792fee31c1d35d71101b
 }
 
 .panel-login>.panel-heading {
 	color: #00415d;
-<<<<<<< HEAD
-	background-color: rgba(255,255,255,0.55);
-	
-=======
 	background-color: rgba(255, 255, 255, 0.55);
->>>>>>> 52dce04bc68cc567731e792fee31c1d35d71101b
 	border-color: #fff;
 	text-align: center;
 }
@@ -109,26 +80,16 @@ body {
 		rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
 }
 
-<<<<<<< HEAD
-.panel-login input[type="text"], .panel-login input[type="number"], .panel-login input[type="email"],
-	.panel-login input[type="password"] {
-=======
 .panel-login input[type="text"], .panel-login input[type="number"],
 	.panel-login input[type="email"], .panel-login input[type="password"] {
->>>>>>> 52dce04bc68cc567731e792fee31c1d35d71101b
 	height: 45px;
 	border: 1px solid #ddd;
 	font-size: 16px;
 	-webkit-transition: all 0.1s linear;
 	-moz-transition: all 0.1s linear;
 	transition: all 0.1s linear;
-<<<<<<< HEAD
-	background-color: rgba(255,255,255,0.07);
-=======
 	background-color: rgba(255, 255, 255, 0.07);
->>>>>>> 52dce04bc68cc567731e792fee31c1d35d71101b
 }
-
 
 .panel-login input:hover, .panel-login input:focus {
 	outline: none;
@@ -136,17 +97,12 @@ body {
 	-moz-box-shadow: none;
 	box-shadow: none;
 	border-color: #ccc;
-	
 }
 
 .btn-login {
 	color: black;
 	outline: none;
-<<<<<<< HEAD
-	background-color:#fff;
-=======
 	background-color: #fff;
->>>>>>> 52dce04bc68cc567731e792fee31c1d35d71101b
 	font-size: 14px;
 	height: auto;
 	font-weight: normal;
@@ -156,20 +112,10 @@ body {
 }
 
 .btn-login:hover, .btn-login:focus {
-<<<<<<< HEAD
-border-color: #fff !important;
-background-color:#59B2E6 !important;	
-color:#fff !important;
-
-}
-
-
-=======
 	border-color: #fff !important;
 	background-color: #59B2E6 !important;
 	color: #fff !important;
 }
->>>>>>> 52dce04bc68cc567731e792fee31c1d35d71101b
 
 .btn-register {
 	background-color: #fff;
@@ -187,15 +133,6 @@ color:#fff !important;
 	color: #fff !important;
 	background-color: #1CB94A !important;
 	border-color: #fff !important;
-<<<<<<< HEAD
-}
-.forgot-password{
-background-color:rgba(255,255,255,0.24);
-border-color:rgba(255,255,255,0);
-color:black;
-
-=======
->>>>>>> 52dce04bc68cc567731e792fee31c1d35d71101b
 }
 
 .forgot-password {
@@ -215,36 +152,21 @@ color:black;
 	Name: <input type="text" name="name" />
 	<input type="submit" >
 </form> -->
-<<<<<<< HEAD
-
-
-
-	
-<body>
-	
- <c:if test="${fn:length(msg)==0}"></c:if>
-  <c:if test="${fn:length(msg)>0}"><h4 align="center" class="alert alert-primary "> ${msg }</h4> </c:if>
-=======
 <body>
 
 	<c:if test="${fn:length(msg)==0}"></c:if>
 	<c:if test="${fn:length(msg)>0}">
 		<h4 align="center" class="alert alert-primary ">${msg }</h4>
 	</c:if>
->>>>>>> 52dce04bc68cc567731e792fee31c1d35d71101b
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
 				<div class="panel panel-login">
-					<div class="panel-heading" >
+					<div class="panel-heading">
 						<div class="row">
 							<div class="col-xs-6">
-<<<<<<< HEAD
-								<a href="#" class="active" id="login-form-link" style="color:#478eb8;">Login</a>
-=======
 								<a href="#" class="active" id="login-form-link"
 									style="color: #478eb8;">Login</a>
->>>>>>> 52dce04bc68cc567731e792fee31c1d35d71101b
 							</div>
 							<div class="col-xs-6">
 								<a href="#" id="register-form-link" style="color: green;">Register</a>
@@ -268,7 +190,7 @@ color:black;
 										<input type="password" name="password" id="password"
 											tabindex="2" class="form-control" placeholder="Password">
 									</div>
-								
+
 									<div class="form-group">
 										<div class="row">
 											<div class="col-sm-6 col-sm-offset-3">
@@ -285,10 +207,10 @@ color:black;
 									<div class="form-group">
 										<input type="text" name="user_name" id="username" tabindex="1"
 											class="form-control ${l1.size() > 0 ? 'is-invalid':'' }"
-											placeholder="UserName(ex:sai123)" value="${user.user_name }" />
+											placeholder="UserName(ex:name123)" value="${user.user_name }" />
 
 										<c:forEach var="e" items="${l1 }">
-											<div id="validationServer03Feedback" class="invalid-feedback">
+											<div id="validationServer03Feedback" class="invalid-feedback" style="font-weight: bold; font-size:15px; color:black">
 												${e }</div>
 										</c:forEach>
 
@@ -300,7 +222,7 @@ color:black;
 											placeholder="Name(ex:sai pal)" value="${user.u_name }" />
 
 										<c:forEach var="e" items="${l2 }">
-											<div id="validationServer03Feedback" class="invalid-feedback">
+											<div id="validationServer03Feedback" class="invalid-feedback" style="font-weight: bold; font-size:15px; color:black">
 												${e }</div>
 										</c:forEach>
 									</div>
@@ -311,7 +233,7 @@ color:black;
 											placeholder="Email(ex:abc@gmail.com)" value="${user.email }" />
 
 										<c:forEach var="e" items="${l3 }">
-											<div id="validationServer03Feedback" class="invalid-feedback">
+											<div id="validationServer03Feedback" class="invalid-feedback" style="font-weight: bold; font-size:15px; color:black">
 												${e }</div>
 										</c:forEach>
 									</div>
@@ -325,7 +247,7 @@ color:black;
 											value="${user.ph_number }" />
 
 										<c:forEach var="e" items="${l4 }">
-											<div id="validationServer03Feedback" class="invalid-feedback">
+											<div id="validationServer03Feedback" class="invalid-feedback" style="font-weight: bold; font-size:15px; color:black">
 												${e }</div>
 										</c:forEach>
 									</div>
@@ -336,7 +258,7 @@ color:black;
 											placeholder="Shop Name(ex:XYZ)" value="${user.shop_name }" />
 
 										<c:forEach var="e" items="${l5 }">
-											<div id="validationServer03Feedback" class="invalid-feedback">
+											<div id="validationServer03Feedback" class="invalid-feedback" style="font-weight: bold; font-size:15px; color:black">
 												${e }</div>
 										</c:forEach>
 									</div>
@@ -348,7 +270,7 @@ color:black;
 											placeholder="Password(ex:Sai@122)" />
 
 										<c:forEach var="e" items="${l6 }">
-											<div id="validationServer03Feedback" class="invalid-feedback">
+											<div id="validationServer03Feedback" class="invalid-feedback" style="font-weight: bold; font-size:15px; color:black">
 												${e }</div>
 										</c:forEach>
 									</div>

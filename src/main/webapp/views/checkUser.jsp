@@ -17,17 +17,19 @@ html{
 height: 100%;
 }
 body {
-  background-image: url("https://as2.ftcdn.net/v2/jpg/02/19/08/79/1000_F_219087968_77wO9yiMMrA1GuDghXAQN3jLi0kkVkzT.jpg");
+  background-image: url("https://media.istockphoto.com/id/1216828053/photo/shopping-basket-with-fresh-food-grocery-supermarket-food-and-eats-online-buying-and-delivery.jpg?s=612x612&w=0&k=20&c=Chd527v9-ho7a-S5k24kcWWfB92Pj3Vh2eM0erk74AU=");
 	background-repeat: no-repeat;
    
     
   background-size: 100% 100%;
 }
-@import url(https://fonts.googleapis.com/css?family=Bungee);
 h1 {
-  text-shadow: 4px 4px 4px #ffcf0f, 2px 2px 1px white;
-  font-family: 'Bungee';
+text-shadow: 6px 6px 6px  #123456, 1px 1px 1px #0AFFFF;
+  font-family: 'Passion One';
+	color: black;
+  text-align: center;
   font-weight: bold;
+;
 }
 .container{
 	left:2%;
@@ -86,7 +88,7 @@ label{
 				<input type="password" style="width:50%;"
 					class="form-control }"
 					id="exampleInputEmail1" name="password" min="0" max="100" step="0.1"
-					aria-describedby="emailHelp" placeholder="ex:User@123" />
+					aria-describedby="emailHelp" placeholder="ex:Name@123" required="required" />
 
 			</div>
 			<input type="text" name="name" value="${name },${uname }"
