@@ -36,8 +36,6 @@ body {
 
 .panel-login {
 	border-color: #ccc;
-	-webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
 	box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
 	background-color: rgba(255, 255, 255, 0.23);
 }
@@ -187,8 +185,9 @@ body {
 											value="${user.user_name }">
 									</div>
 									<div class="form-group">
-										<input type="password" name="password" id="password"
+										<input type="password" name="password"  id="password"
 											tabindex="2" class="form-control" placeholder="Password">
+											<input type="checkbox" onclick="myFunction()">Show Password
 									</div>
 
 									<div class="form-group">
@@ -312,6 +311,15 @@ body {
 			});
 
 		});
+		
+		function myFunction() {
+			  var x = document.getElementById("password");
+			  if (x.type === "password") {
+			    x.type = "text";
+			  } else {
+			    x.type = "password";
+			  }
+			}
 	</script>
 
 </body>
