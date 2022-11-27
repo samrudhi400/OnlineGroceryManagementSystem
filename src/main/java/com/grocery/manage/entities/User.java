@@ -26,6 +26,7 @@ public @Data class User {
 	@NotEmpty(message =  "can't be empty")
 	@Pattern(regexp = "^[a-zA-Z_]+( [a-zA-Z_]+)*$", message = "ex:sai pal")
 	@Size(min = 6, max = 30, message = "size between 6 to 30")
+	//full name
 	private String u_name;
 	
 	@NotBlank(message = "email cannot be blank")

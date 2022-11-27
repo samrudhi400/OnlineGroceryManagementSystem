@@ -15,7 +15,6 @@ import lombok.Data;
 public @Data class CustomerHistory {
 
 	@Id
-//	id will be generate automatically 
 	@GeneratedValue(
 		    strategy= GenerationType.AUTO,
 		    generator="native"
@@ -25,7 +24,7 @@ public @Data class CustomerHistory {
 		    strategy = "native"
 		)
 	private long id;
-	
+
 	
 	@NotEmpty()
 	private String c_name;

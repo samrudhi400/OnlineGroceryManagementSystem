@@ -13,7 +13,6 @@ import lombok.Data;
 public @Data class BillingItemHistory {
 	
 	@Id
-//	id will be generate automatically 
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long sl_no;
 	
@@ -25,7 +24,7 @@ public @Data class BillingItemHistory {
 	private String item_name;
 	
 	@NotNull
-	private int qty;
+	private long qty;
 	
 	@NotNull
 	private double price;
@@ -61,11 +60,11 @@ public @Data class BillingItemHistory {
 		this.item_name = item_name;
 	}
 
-	public int getQty() {
+	public long getQty() {
 		return qty;
 	}
 
-	public void setQty(int qty) {
+	public void setQty(long qty) {
 		this.qty = qty;
 	}
 

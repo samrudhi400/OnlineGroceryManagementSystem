@@ -1,6 +1,8 @@
 package com.grocery.manage.entities;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.Max;
@@ -24,9 +26,12 @@ import lombok.NoArgsConstructor;
 public @Data class Product {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long slno;
+	
 	@NotNull(message = "can't be null")
 	@Min(value = 1, message = "min is 1")
-	private int id;
+	private long id;
 	
 	@NotEmpty(message = "can't be Empty")
 	@Size(min = 3, max= 30, message = "size is in between 3 to 30")
@@ -44,11 +49,19 @@ public @Data class Product {
 	
 	private String shop_name;
 
-	public int getId() {
+	public long getSlno() {
+		return slno;
+	}
+
+	public void setSlno(long slno) {
+		this.slno = slno;
+	}
+
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 

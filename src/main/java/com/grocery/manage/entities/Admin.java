@@ -1,4 +1,4 @@
-package com.grocery.manage.entities;
+ package com.grocery.manage.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
